@@ -82,6 +82,9 @@
   <data name="textChave.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 21</value>
   </data>
+  <data name="textChave.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="bt_limpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 219</value>
   </data>

@@ -9,7 +9,6 @@ namespace Cripto_TextBox
 
         private void bt_cripto_Click(object sender, EventArgs e)
         {
-
             int chave;
             chave = Convert.ToInt32(textChave.Text);
 
