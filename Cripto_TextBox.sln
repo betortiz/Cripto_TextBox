@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cripto_TextBox", "Cripto_TextBox\Cripto_TextBox.csproj", "{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstaladorCriptoCesar", "Instalador\InstaladorCriptoCesar\InstaladorCriptoCesar.vdproj", "{65F6E9F6-F2B8-4100-9111-5A387C74FA27}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CifraCesar_PSG_ACA", "CifraCesar_PSG_ACA\CifraCesar_PSG_ACA.vdproj", "{A963A8AE-02BA-4E30-9AA3-F49B005166DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F6E9F6-F2B8-4100-9111-5A387C74FA27}.Debug|Any CPU.ActiveCfg = Debug
+		{65F6E9F6-F2B8-4100-9111-5A387C74FA27}.Release|Any CPU.ActiveCfg = Release
+		{A963A8AE-02BA-4E30-9AA3-F49B005166DF}.Debug|Any CPU.ActiveCfg = Debug
+		{A963A8AE-02BA-4E30-9AA3-F49B005166DF}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD40F5F2-90C5-470A-9025-1EF2C6A7D631}
+	EndGlobalSection
+EndGlobal
