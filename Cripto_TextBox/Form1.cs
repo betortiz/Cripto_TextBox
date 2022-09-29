@@ -22,12 +22,13 @@ namespace Cripto_TextBox
             chave = Convert.ToInt32(textChave.Text);
 
             textDecripto.Text = String.Empty;
+
             for (int i = 0; i < textCripto.Text.Length; i++)
             {
                 int txtUsuario = (int)textCripto.Text[i];
                 int txtCifrado = txtUsuario + chave;
                 textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
-                Clipboard.SetText(textDecripto.Text);                
+                Clipboard.SetText(textDecripto.Text);
             }
             messageAlert();
         }
@@ -46,14 +47,9 @@ namespace Cripto_TextBox
             }
         }
 
-        private void textChave_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
                 DialogResult dn = MessageBox.Show("Somente números", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
