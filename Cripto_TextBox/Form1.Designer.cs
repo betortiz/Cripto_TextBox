@@ -43,6 +43,7 @@
             // 
             resources.ApplyResources(this.textCripto, "textCripto");
             this.textCripto.Name = "textCripto";
+            this.textCripto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textCripto_KeyPress);
             // 
             // textDecripto
             // 

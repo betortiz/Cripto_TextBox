@@ -71,5 +71,13 @@ namespace Cripto_TextBox
             if (MessageBox.Show("Deseja sair da aplicação?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No) return;
             Application.Exit();
         }
+
+        private void textCripto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                bt_cripto_Click(sender, e);
+            }
+        }
     }
 }
