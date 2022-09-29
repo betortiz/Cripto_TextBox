@@ -61,6 +61,10 @@
   <data name="textCripto.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 50</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textCripto.MaxLength" type="System.Int32, mscorlib">
+    <value>512</value>
+  </data>
   <data name="textCripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 81</value>
   </data>
@@ -91,7 +95,6 @@
   <data name="bt_limpar.Text" xml:space="preserve">
     <value>Limpar</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
