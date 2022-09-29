@@ -7,6 +7,15 @@ namespace Cripto_TextBox
             InitializeComponent();
         }
 
+
+        public void messageAlert()
+        {
+            DialogResult r5 = MessageBox.Show("Sua menssagem foi criptografada e copiada para a area de transferencia!!!",
+                        "Mensagem de aviso", MessageBoxButtons.OK,
+                        MessageBoxIcon.Question,
+                        MessageBoxDefaultButton.Button1);
+        }
+
         private void bt_cripto_Click(object sender, EventArgs e)
         {
             int chave;
@@ -18,7 +27,9 @@ namespace Cripto_TextBox
                 int txtUsuario = (int)textCripto.Text[i];
                 int txtCifrado = txtUsuario + chave;
                 textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
+                Clipboard.SetText(textDecripto.Text);                
             }
+            messageAlert();
         }
 
         private void bt_decripto_Click(object sender, EventArgs e)
