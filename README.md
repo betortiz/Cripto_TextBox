@@ -3,4 +3,5 @@
 <div>Projeto de criptografia baseado na Cifra de Cesar.
 <div>Instalador em anexo.
 <div>Setup para sistema operacional Windows
+<div>Necessário Microsoft Framework 4.5
 
