@@ -23,14 +23,26 @@ namespace Cripto_TextBox
 
             textDecripto.Text = String.Empty;
 
-            for (int i = 0; i < textCripto.Text.Length; i++)
+            if (chave < 10 && chave > 0)
             {
-                int txtUsuario = (int)textCripto.Text[i];
-                int txtCifrado = txtUsuario + chave;
-                textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
-                Clipboard.SetText(textDecripto.Text);
-            }
-            messageAlert();
+                for (int i = 0; i < textCripto.Text.Length; i++)
+                {
+                    int txtUsuario = (int)textCripto.Text[i];
+                    int txtCifrado = txtUsuario + chave;
+                    textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
+                    Clipboard.SetText(textDecripto.Text);
+                    
+                }
+                messageAlert();
+            } 
+            
+            if (chave > 9 || chave < 1){
+                            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
+                            "Mensagem de aviso", MessageBoxButtons.OK,
+                            MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button1);
+            }            
+            
         }
 
         private void bt_decripto_Click(object sender, EventArgs e)
@@ -75,5 +87,6 @@ namespace Cripto_TextBox
                 bt_cripto_Click(sender, e);
             }
         }
+
     }
 }
