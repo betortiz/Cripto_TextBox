@@ -59,17 +59,23 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textCripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 50</value>
+    <value>25, 55</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textCripto.MaxLength" type="System.Int32, mscorlib">
     <value>512</value>
   </data>
+  <data name="textCripto.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="textCripto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 81</value>
+    <value>371, 23</value>
+  </data>
+  <data name="textCripto.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="textDecripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 137</value>
+    <value>25, 90</value>
   </data>
   <data name="textDecripto.PlaceholderText" xml:space="preserve">
     <value>Decriptar menssagem</value>
@@ -77,17 +83,26 @@
   <data name="textDecripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 76</value>
   </data>
+  <data name="textDecripto.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="bt_cripto.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 219</value>
+  </data>
+  <data name="bt_cripto.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="bt_decripto.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 219</value>
   </data>
+  <data name="bt_decripto.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="textChave.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 21</value>
   </data>
-  <data name="textChave.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="textChave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="bt_limpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 219</value>
@@ -112,6 +127,9 @@
   </data>
   <data name="bt_sair.Location" type="System.Drawing.Point, System.Drawing">
     <value>321, 219</value>
+  </data>
+  <data name="bt_sair.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="bt_sair.Text" xml:space="preserve">
     <value>Sair</value>
