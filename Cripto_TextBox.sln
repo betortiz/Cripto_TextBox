@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cripto_TextBox", "Cripto_TextBox\Cripto_TextBox.csproj", "{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_Cripto_ACAD_PSG", "Setup_Cripto_ACAD_PSG\Setup_Cripto_ACAD_PSG.vdproj", "{667A5A54-B180-4662-A446-75CAD1F0E44C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09C9F73F-82DA-4236-8B5B-CF1A6AEE362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667A5A54-B180-4662-A446-75CAD1F0E44C}.Debug|Any CPU.ActiveCfg = Debug
+		{667A5A54-B180-4662-A446-75CAD1F0E44C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

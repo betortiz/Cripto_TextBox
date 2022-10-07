@@ -59,7 +59,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textCripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 55</value>
+    <value>25, 61</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textCripto.MaxLength" type="System.Int32, mscorlib">
@@ -68,6 +68,9 @@
   <data name="textCripto.Multiline" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="textCripto.PlaceholderText" xml:space="preserve">
+    <value>Digite uma messagem para criptografar</value>
+  </data>
   <data name="textCripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 23</value>
   </data>
@@ -75,10 +78,10 @@
     <value>2</value>
   </data>
   <data name="textDecripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 90</value>
+    <value>25, 102</value>
   </data>
   <data name="textDecripto.PlaceholderText" xml:space="preserve">
-    <value>Decriptar menssagem</value>
+    <value>Menssagem criptografada</value>
   </data>
   <data name="textDecripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 76</value>
@@ -101,8 +104,23 @@
   <data name="textChave.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 21</value>
   </data>
+<<<<<<< HEAD
   <data name="textChave.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="textChave.Text" xml:space="preserve">
+    <value>1</value>
+=======
+  <data name="textChave.PlaceholderText" xml:space="preserve">
+    <value>( 1 - 9 )</value>
+  </data>
+  <data name="textChave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textChave.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+>>>>>>> 918e36bd52476bba5b8afa4701d5a3ccd870c90d
   </data>
   <data name="bt_limpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 219</value>
@@ -121,6 +139,9 @@
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Digite a chave para criptografia</value>
