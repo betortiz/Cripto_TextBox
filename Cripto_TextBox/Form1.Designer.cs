@@ -69,7 +69,6 @@
             // 
             resources.ApplyResources(this.textChave, "textChave");
             this.textChave.Name = "textChave";
-            this.textChave.TextChanged += new System.EventHandler(this.textChave_TextChanged);
             this.textChave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textChave_KeyPress);
             // 
             // bt_limpar

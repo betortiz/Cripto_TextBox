@@ -104,13 +104,6 @@
   <data name="textChave.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 21</value>
   </data>
-<<<<<<< HEAD
-  <data name="textChave.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="textChave.Text" xml:space="preserve">
-    <value>1</value>
-=======
   <data name="textChave.PlaceholderText" xml:space="preserve">
     <value>( 1 - 9 )</value>
   </data>
@@ -120,7 +113,6 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textChave.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
->>>>>>> 918e36bd52476bba5b8afa4701d5a3ccd870c90d
   </data>
   <data name="bt_limpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 219</value>
