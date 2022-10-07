@@ -54,15 +54,17 @@
             // bt_cripto
             // 
             resources.ApplyResources(this.bt_cripto, "bt_cripto");
+            this.bt_cripto.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_cripto.Name = "bt_cripto";
-            this.bt_cripto.UseVisualStyleBackColor = true;
+            this.bt_cripto.UseVisualStyleBackColor = false;
             this.bt_cripto.Click += new System.EventHandler(this.bt_cripto_Click);
             // 
             // bt_decripto
             // 
             resources.ApplyResources(this.bt_decripto, "bt_decripto");
+            this.bt_decripto.BackColor = System.Drawing.Color.RosyBrown;
             this.bt_decripto.Name = "bt_decripto";
-            this.bt_decripto.UseVisualStyleBackColor = true;
+            this.bt_decripto.UseVisualStyleBackColor = false;
             this.bt_decripto.Click += new System.EventHandler(this.bt_decripto_Click);
             // 
             // textChave
