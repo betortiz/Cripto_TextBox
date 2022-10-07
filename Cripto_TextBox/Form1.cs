@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.Logging;
+
 namespace Cripto_TextBox
 {
     public partial class Form1 : Form
@@ -8,6 +10,14 @@ namespace Cripto_TextBox
         }
 
 
+        public void message_validator()
+        {
+            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
+                 "Mensagem de aviso", MessageBoxButtons.OK,
+                 MessageBoxIcon.Question,
+                 MessageBoxDefaultButton.Button1);
+
+        }
         public void messageAlert()
         {
             DialogResult r5 = MessageBox.Show("Sua menssagem foi criptografada e copiada para a area de transferencia!!!",
@@ -19,9 +29,18 @@ namespace Cripto_TextBox
         private void bt_cripto_Click(object sender, EventArgs e)
         {
             int chave;
+            
+
+        if (textChave.Text == string.Empty)
+            {
+                textChave.Text = "1";
+            }
+           
             chave = Convert.ToInt32(textChave.Text);
 
             textDecripto.Text = String.Empty;
+
+   
 
             if (chave < 10 && chave > 0)
             {
@@ -31,16 +50,13 @@ namespace Cripto_TextBox
                     int txtCifrado = txtUsuario + chave;
                     textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
                     Clipboard.SetText(textDecripto.Text);
-                    
+
                 }
                 messageAlert();
-            } 
-            
+            }
             if (chave > 9 || chave < 1){
-                            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
-                            "Mensagem de aviso", MessageBoxButtons.OK,
-                            MessageBoxIcon.Question,
-                            MessageBoxDefaultButton.Button1);
+                message_validator();
+
             }            
             
         }
@@ -61,6 +77,13 @@ namespace Cripto_TextBox
 
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
         {
+
+            if (e.KeyChar == '0')
+            {
+                e.Handled = true;
+                DialogResult dn = MessageBox.Show("Digite apenas número de 1 a 9", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
@@ -70,6 +93,7 @@ namespace Cripto_TextBox
 
         private void bt_limpar_Click(object sender, EventArgs e)
         {
+            textChave.Text = String.Empty;
             textCripto.Text = String.Empty;
             textDecripto.Text = String.Empty;
         }
@@ -88,5 +112,15 @@ namespace Cripto_TextBox
             }
         }
 
+        private void textChave_TextChanged(object sender, EventArgs e)
+        {
+
+            if (textChave.Text.Length > 1)
+            {
+                textChave.Text = String.Empty;
+                message_validator();
+            }
+
+        }
     }
 }
