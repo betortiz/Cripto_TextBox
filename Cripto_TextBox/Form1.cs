@@ -65,15 +65,6 @@ namespace Cripto_TextBox
             }
         }
 
-        private void textChave_TextChanged(object sender, EventArgs e)
-        {
-            if (textChave.Text.Length > 1)
-            {
-                textChave.Text = String.Empty;
-                message_validator();
-            }
-        }
-
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '0')
@@ -107,6 +98,15 @@ namespace Cripto_TextBox
             if (e.KeyChar == (char)13)
             {
                 bt_cripto_Click(sender, e);
+            }
+        }
+
+        private void textChave_TextChanged_1(object sender, EventArgs e)
+        {
+            if (textChave.Text.Length > 1)
+            {
+                textChave.Text = String.Empty;
+                message_validator();
             }
         }
     }
