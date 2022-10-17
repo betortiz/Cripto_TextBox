@@ -37,8 +37,6 @@
             this.bt_limpar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_sair = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textCripto
@@ -56,17 +54,13 @@
             // bt_cripto
             // 
             resources.ApplyResources(this.bt_cripto, "bt_cripto");
-            this.bt_cripto.BackColor = System.Drawing.Color.LightGray;
-            this.bt_cripto.ForeColor = System.Drawing.Color.Transparent;
             this.bt_cripto.Name = "bt_cripto";
-            this.bt_cripto.UseMnemonic = false;
-            this.bt_cripto.UseVisualStyleBackColor = false;
+            this.bt_cripto.UseVisualStyleBackColor = true;
             this.bt_cripto.Click += new System.EventHandler(this.bt_cripto_Click);
             // 
             // bt_decripto
             // 
             resources.ApplyResources(this.bt_decripto, "bt_decripto");
-            this.bt_decripto.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.bt_decripto.Name = "bt_decripto";
             this.bt_decripto.UseVisualStyleBackColor = true;
             this.bt_decripto.Click += new System.EventHandler(this.bt_decripto_Click);
@@ -81,37 +75,26 @@
             // bt_limpar
             // 
             resources.ApplyResources(this.bt_limpar, "bt_limpar");
-            this.bt_limpar.BackColor = System.Drawing.Color.Yellow;
             this.bt_limpar.Name = "bt_limpar";
-            this.bt_limpar.UseVisualStyleBackColor = false;
+            this.bt_limpar.UseVisualStyleBackColor = true;
             this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label1.Name = "label1";
             // 
             // bt_sair
             // 
             resources.ApplyResources(this.bt_sair, "bt_sair");
-            this.bt_sair.BackColor = System.Drawing.Color.Red;
             this.bt_sair.Name = "bt_sair";
-            this.bt_sair.UseVisualStyleBackColor = false;
+            this.bt_sair.UseVisualStyleBackColor = true;
             this.bt_sair.Click += new System.EventHandler(this.bt_sair_Click);
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bt_sair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_limpar);
@@ -123,7 +106,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,6 +121,5 @@
         private Button bt_limpar;
         private Label label1;
         private Button bt_sair;
-        private PictureBox pictureBox1;
     }
 }
