@@ -7,23 +7,6 @@ namespace Cripto_TextBox
             InitializeComponent();
         }
 
-        public void message_validator()
-        {
-            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
-                 "Mensagem de aviso", MessageBoxButtons.OK,
-                 MessageBoxIcon.Question,
-                 MessageBoxDefaultButton.Button1);
-
-        }
-
-        public void messageAlert()
-        {
-            DialogResult r5 = MessageBox.Show("Sua menssagem foi criptografada e copiada para a area de transferencia!!!",
-                        "Mensagem de aviso", MessageBoxButtons.OK,
-                        MessageBoxIcon.Question,
-                        MessageBoxDefaultButton.Button1);
-        }
-
         private void bt_cripto_Click(object sender, EventArgs e)
         {
             if (textChave.Text == string.Empty)
@@ -41,12 +24,12 @@ namespace Cripto_TextBox
                 textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
                 Clipboard.SetText(textDecripto.Text);
             }
-            messageAlert();
+            Mensagem m1 = new Mensagem();
+            m1.Alerta();
         }
 
         private void bt_decripto_Click(object sender, EventArgs e)
         {
-            // ultimo ajuste
             if (textChave.Text == string.Empty)
             {
                 textChave.Text = "1";
@@ -67,6 +50,7 @@ namespace Cripto_TextBox
 
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if (e.KeyChar == '0')
             {
                 e.Handled = true;
@@ -82,9 +66,8 @@ namespace Cripto_TextBox
 
         private void bt_limpar_Click(object sender, EventArgs e)
         {
-            textChave.Text = String.Empty;
-            textCripto.Text = String.Empty;
-            textDecripto.Text = String.Empty;
+            Mensagem limpar = new Mensagem();
+            limpar.Limpar();
         }
 
         private void bt_sair_Click(object sender, EventArgs e)
@@ -103,10 +86,12 @@ namespace Cripto_TextBox
 
         private void textChave_TextChanged_1(object sender, EventArgs e)
         {
+            Mensagem m2 = new Mensagem();
+
             if (textChave.Text.Length > 1)
             {
                 textChave.Text = String.Empty;
-                message_validator();
+                m2.mensagem_validador();
             }
         }
 
