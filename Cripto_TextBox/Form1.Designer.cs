@@ -37,6 +37,7 @@
             this.bt_limpar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_sair = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // textCripto
@@ -77,26 +78,36 @@
             // bt_limpar
             // 
             resources.ApplyResources(this.bt_limpar, "bt_limpar");
+            this.bt_limpar.BackColor = System.Drawing.Color.Yellow;
             this.bt_limpar.Name = "bt_limpar";
-            this.bt_limpar.UseVisualStyleBackColor = true;
+            this.bt_limpar.UseVisualStyleBackColor = false;
             this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label1.Name = "label1";
             // 
             // bt_sair
             // 
             resources.ApplyResources(this.bt_sair, "bt_sair");
+            this.bt_sair.BackColor = System.Drawing.Color.Red;
             this.bt_sair.Name = "bt_sair";
-            this.bt_sair.UseVisualStyleBackColor = true;
+            this.bt_sair.UseVisualStyleBackColor = false;
             this.bt_sair.Click += new System.EventHandler(this.bt_sair_Click);
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_sair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_limpar);
@@ -123,5 +134,6 @@
         private Button bt_limpar;
         private Label label1;
         private Button bt_sair;
+        private Panel panel1;
     }
 }
