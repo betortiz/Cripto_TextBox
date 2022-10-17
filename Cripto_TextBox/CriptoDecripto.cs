@@ -4,7 +4,29 @@ namespace Cripto_TextBox
 {
     internal class CriptoDecripto
     {      
-        internal void Cripto(TextBox textDecripto)
+        internal void Cripto(object sender, EventArgs e)
+        {
+            TextBox textCripto = new TextBox();
+            textCripto.Text = "";
+
+            TextBox textChave = new TextBox();
+            textChave.Text = "";
+
+            TextBox texDecripto = new TextBox();
+            texDecripto.Text = "";
+
+            int chave = Convert.ToInt32(textChave.Text);
+
+            for (int i = 0; i < textCripto.Text.Length; i++)
+            {
+                int txtUsuario = (int)textCripto.Text[i];
+                int txtCifrado = txtUsuario + chave;
+                texDecripto.Text += char.ConvertFromUtf32(txtCifrado);
+                Clipboard.SetText(texDecripto.Text);
+            }
+        }
+
+        internal void Decripto(object sender, EventArgs e)
         {
             TextBox textCripto = new TextBox();
             textCripto.Text = "";
@@ -14,33 +36,14 @@ namespace Cripto_TextBox
             textChave.Text = "";
 
             TextBox texDecripto = new TextBox();
-            textDecripto.Text = "";
-
-            //string textCripto = "";
-            //string textDecripto = "";
-            //string textChave = "";
+            texDecripto.Text = "";
             int chave = Convert.ToInt32(textChave.Text);
 
             for (int i = 0; i < textCripto.Text.Length; i++)
             {
                 int txtUsuario = (int)textCripto.Text[i];
-                int txtCifrado = txtUsuario + chave;
-                textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
-                Clipboard.SetText(textDecripto.Text);
-            }
-        }
-
-        internal void Decripto()
-        {
-            string textCripto = "";
-            string textDecripto = "";
-            int chave = 0;
-
-            for (int i = 0; i < textCripto.Length; i++)
-            {
-                int txtUsuario = (int)textCripto[i];
                 int txtCifrado = txtUsuario - chave;
-                textDecripto += char.ConvertFromUtf32(txtCifrado);
+                texDecripto.Text += char.ConvertFromUtf32(txtCifrado);
             }
         }
     }
