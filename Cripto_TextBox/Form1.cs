@@ -20,7 +20,7 @@ namespace Cripto_TextBox
             textDecripto.Text = String.Empty;
 
             CriptoDecripto cripto = new CriptoDecripto();
-            cripto.Cripto(textDecripto);
+            cripto.Cripto(sender, e);
         }
 
         private void bt_decripto_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace Cripto_TextBox
             textDecripto.Text = String.Empty;
 
             CriptoDecripto decripto = new CriptoDecripto();
-            decripto.Decripto();
+            decripto.Decripto(sender, e);
         }
 
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
