@@ -109,5 +109,10 @@ namespace Cripto_TextBox
                 message_validator();
             }
         }
+
+        private void textCripto_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

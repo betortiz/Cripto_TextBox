@@ -43,6 +43,7 @@
             // 
             resources.ApplyResources(this.textCripto, "textCripto");
             this.textCripto.Name = "textCripto";
+            this.textCripto.TextChanged += new System.EventHandler(this.textCripto_TextChanged);
             this.textCripto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textCripto_KeyPress);
             // 
             // textDecripto
@@ -69,6 +70,7 @@
             // 
             resources.ApplyResources(this.textChave, "textChave");
             this.textChave.Name = "textChave";
+            this.textChave.Tag = "vagal";
             this.textChave.TextChanged += new System.EventHandler(this.textChave_TextChanged_1);
             this.textChave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textChave_KeyPress);
             // 
