@@ -14,13 +14,18 @@ namespace Cripto_TextBox
                 textChave.Text = "1";
             }
 
-            Mensagem m1 = new Mensagem();
-            m1.Alerta();
+            int chave = Convert.ToInt32(textChave.Text);
 
             textDecripto.Text = String.Empty;
-
-            CriptoDecripto cripto = new CriptoDecripto();
-            cripto.Cripto(sender, e);
+            for (int i = 0; i < textCripto.Text.Length; i++)
+            {
+                int txtUsuario = (int)textCripto.Text[i];
+                int txtCifrado = txtUsuario + chave;
+                textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
+                Clipboard.SetText(textDecripto.Text);
+            }
+            Mensagem m1 = new Mensagem();
+            m1.Alerta();
         }
 
         private void bt_decripto_Click(object sender, EventArgs e)
@@ -30,10 +35,17 @@ namespace Cripto_TextBox
                 textChave.Text = "1";
             }
 
-            textDecripto.Text = String.Empty;
+            int chave = Convert.ToInt32(textChave.Text);
 
-            CriptoDecripto decripto = new CriptoDecripto();
-            decripto.Decripto(sender, e);
+
+
+            textDecripto.Text = String.Empty;
+            for (int i = 0; i < textCripto.Text.Length; i++)
+            {
+                int txtUsuario = (int)textCripto.Text[i];
+                int txtCifrado = txtUsuario - chave;
+                textDecripto.Text += char.ConvertFromUtf32(txtCifrado);
+            }
         }
 
         private void textChave_KeyPress(object sender, KeyPressEventArgs e)
