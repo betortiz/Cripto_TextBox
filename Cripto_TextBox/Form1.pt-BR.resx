@@ -59,7 +59,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textCripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 74</value>
+    <value>42, 101</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textCripto.MaxLength" type="System.Int32, mscorlib">
@@ -69,19 +69,19 @@
     <value>Digite uma mensagem para criptografar/ descriptografar</value>
   </data>
   <data name="textCripto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 92</value>
+    <value>391, 79</value>
   </data>
   <data name="textCripto.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="textDecripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 181</value>
+    <value>42, 195</value>
   </data>
   <data name="textDecripto.PlaceholderText" xml:space="preserve">
     <value>Resultado da menssagem </value>
   </data>
   <data name="textDecripto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 88</value>
+    <value>391, 88</value>
   </data>
   <data name="textDecripto.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -89,7 +89,7 @@
   <data name="bt_cripto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAcCAYAAABlL09dAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAATVJREFUSEvtlt8NgjAQxnmEFhNGYBRHcAQ30A10BDfADRyBEXj0QeFGYAS8q0dz
+        DAAACwwBP0AiyAAAATVJREFUSEvtlt8NgjAQxnmEFhNGYBRHcAQ30A10BDfADRyBEXj0QeFGYAS8q0dz
         khaK+GLCJb+k6X39cvQv0VhUWZaBUqdGKWi07piq1rq4x3HOsnkBSXJAk1YYDmnrJDmyPCzYVJqUWOWF
         wHYlc8Hm9Ik4oK+0fW42O07ZeGq9lxqaMk75o1bqzAM6rNBbDeWsDsdwtz8AP5sHAHd5AzWmahrDXf7o
         d0CIeE4Rf2JMq4yigkCRXe2+z4c4OFZLXsbUnKx38meYvY2NsdP1LS0ZuxKLWY0tQcZ1mp6B7maE2i7N
@@ -102,7 +102,7 @@
     <value>Center</value>
   </data>
   <data name="bt_cripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 275</value>
+    <value>42, 321</value>
   </data>
   <data name="bt_cripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 44</value>
@@ -116,7 +116,7 @@
   <data name="bt_decripto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAA3lJREFUSEu1VktPE1EU5iF9USgCGuqzhaLttDMh4Sf4A1wYNi6IO3YuXJoY60JR
+        DAAACwwBP0AiyAAAA3lJREFUSEu1VktPE1EU5iF9USgCGuqzhaLttDMh4Sf4A1wYNi6IO3YuXJoY60JR
         UKD0XcBCWyioiUu3bnSjCUHcsMJE90RW6ub6nTt3yjAd5AbGL/lyO/fec853zzl3pi1OYeRtuUd7vfBQ
         2yhtahtFprO0qdbzd0bK5R6x7f+AMdaqVdJhBN09CN7EXYgMYXurbuUsZAQY3NNeLYQNOzE6gjZtvfjN
         HCxRy3yM55894Kyk3pnX1I3ie7LRTZ1BW7yavmUOEk1PJj0ez1Uw7Ha7BzGGFMyZ92jLqRtkq7s4BagP
@@ -138,7 +138,7 @@
     <value>Center</value>
   </data>
   <data name="bt_decripto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 275</value>
+    <value>154, 321</value>
   </data>
   <data name="bt_decripto.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 44</value>
@@ -150,7 +150,7 @@
     <value> </value>
   </data>
   <data name="textChave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 45</value>
+    <value>42, 60</value>
   </data>
   <data name="textChave.PlaceholderText" xml:space="preserve">
     <value>( 1 - 9 )</value>
@@ -164,7 +164,7 @@
   <data name="bt_limpar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAexJREFUSEvtlrFOAkEQhvcRfIRL7vZyBw2h0ZJCW2JsKaQl0cQKIo0WEEoN0foS
+        DAAACwwBP0AiyAAAAexJREFUSEvtlrFOAkEQhvcRfIRL7vZyBw2h0ZJCW2JsKaQl0cQKIo0WEEoN0foS
         e8IDoOERfAQarE14gXX+4RaPvd07BEon+Qizu/OzNzO7nHBZRcpaHIbTWMo5IH9hoKpSPqXL/2YUCEFV
         hqRNREHQiH3/kvw2qAbBHcaxQ3YqQfDISJmk8O72xvfbEP/OTRyDVHyXHa7zHASf9JRzQD4/IaXjOfPU
         nBakKIoiT+ALO5Q3mqhFnucBspM0/f/mNqRJp0yj29AEa9MwOjBh+ED51odjQT1+aAct+AfoCypsW3AY
@@ -179,7 +179,7 @@
     <value>Center</value>
   </data>
   <data name="bt_limpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 275</value>
+    <value>272, 321</value>
   </data>
   <data name="bt_limpar.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 44</value>
@@ -194,7 +194,7 @@
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 22</value>
+    <value>143, 37</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 17</value>
@@ -208,7 +208,7 @@
   <data name="bt_sair.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAqBJREFUWEft2EuIjWEcx/Hjnim5l4UZl2SB5LJQpmTDoORSpAgpssHGjrCYJgsZ
+        DAAACwwBP0AiyAAAAqBJREFUWEft2EuIjWEcx/Hjnim5l4UZl2SB5LJQpmTDoORSpAgpssHGjrCYJgsZ
         xZpsaJrFlLFQiCGXDbllY4MIMTO5k+v3xzz19/S887xn3vc9G+dXn5rzOs9zft7zvLdTqqaa/yQDMBbT
         UKsNRacfBmMkxmMGlmMHDuI0buIxXuEjNiJT6tCEY2jAIPiZjXbcxVv8SmEz+pwJeAo32U/sg5+FsB+a
         RqZiO+FP+Bx+Kl5sF/wJu+Cn4sUm4R3shEfgJ9diw7AKLXiAWziKebALfDGu4yH2QIe7n1yK6dDehNsI
@@ -226,7 +226,7 @@
     <value>Center</value>
   </data>
   <data name="bt_sair.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 275</value>
+    <value>384, 321</value>
   </data>
   <data name="bt_sair.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 44</value>
@@ -240,7 +240,7 @@
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAZhJREFUWEftl81xgzAQRinBJeSY8QRGJaSUdBB3kDThAM5BuWT4ycHpICWkBEqg
+        DAAACwwBP0AiyAAAAZhJREFUWEftl81xgzAQRinBJeSY8QRGJaSUdBB3kDThAM5BuWT4ycHpICWkBEqg
         hGQXFgdbayGDwDnsm3kXvCt9FhLYgSAIgiD8D26z+CbKXzZhudPgV2OR7sMsfsDPqOw6rMutwkBRkf7Y
         xPBXCRuVu0cukNU83VD7/EQfr09sCBehl4aZD9xn7OQXeJfF9zScf5oDUqTV6aQjrJTWKxrWLz5W8eBc
         +xMG/zYm+7OOsvgZVxtPPYZgavrWIN6VSar3raJ4QaD2egUXuckaFQSj0gO497hanx7tb+uEefJJZQYu
@@ -253,11 +253,14 @@
   <data name="panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 19</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 35</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>421, 335</value>
+    <value>461, 416</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Criptografia - PSG_ACA</value>
